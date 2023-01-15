@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio.pkg0;
+
+//no desconetes el pc de la red ni lo apagues y en un rato tendras el archivo en la carpeta del escritorio
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author paolaschicote
+ */
+
+public class Ejercicio0 {
+
+  
+    public static void main (String[] args){
+        
+            Scanner teclado = new Scanner (System.in);
+            System.out.print("Introduce un numero:");
+            int n;
+            try{
+                n= teclado.nextInt();
+                System.out.println("La division es:" + n/n);
+            } catch (InputMismatchException ex ) {
+                System.out.println(ex);
+                System.out.println("No hay na");
+                
+            }
+            System.out.println("Vamos a ver");
+            
+            
+            String resultado =
+            JOptionPane.showInputDialog("Introduce un número");
+            try{
+                    n= Integer.parseInt(resultado);
+                    JOptionPane.showMessageDialog(null, "La division:" + n/n);
+            }catch (NumberFormatException ex){
+                JOptionPane.showMessageDialog(null, "muy mal");
+            }
+            
+            
+  
